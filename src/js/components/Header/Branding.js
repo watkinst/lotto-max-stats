@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Title from './Branding/Title';
 import Tagline from './Branding/Tagline';
 
