@@ -2,7 +2,7 @@ import Dispatcher from '../dispatcher/Dispatcher';
 import Constants from '../constants/Constants';
 
 var Actions = {
-  fetchData: function() {
+  fetchData: () => {
     Dispatcher.dispatch({
       actionType: Constants.DATA_FETCH
     });
