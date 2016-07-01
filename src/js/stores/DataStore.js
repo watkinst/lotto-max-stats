@@ -1,7 +1,7 @@
 import { EventEmitter } from 'events';
+import axios from 'axios';
 import Dispatcher from '../dispatcher/Dispatcher';
 import Constants from '../constants/Constants';
-import $ from 'jquery';
 
 class DataStore extends EventEmitter {
 	constructor() {
@@ -35,21 +35,19 @@ class DataStore extends EventEmitter {
 
 	    case Constants.DATA_FETCH:
 
-	      $.ajax({
-	        url: '../../data/data.json',
-	        dataType: 'json',
-	        cache: false
-	      }).then (
-	        (data) => {
-	          if ((this.getData() === null) || ((this.getData() !== null) && (JSON.stringify(this.getData()) !== JSON.stringify(data)))) {
-	            this.setData(data);
-	            this.emitChange();
-	          }
-	        },
-	        (xhr, status, err) => {
-	          console.error(status, err.toString());
-	        }
-	      );
+        axios.get('../../data/data.json')
+          .then((response) => {
+            var haveData = (this.data !== null) ? true : false;
+            var dataStr = JSON.stringify(this.data);
+            var respDataStr = JSON.stringify(response.data);
+            if ((!haveData) || ((haveData) && (dataStr !== respDataStr))) {
+              this.setData(response.data);
+              this.emitChange();
+            }
+          })
+          .catch((response) =>{
+            console.log(response);
+          });	      
 
 	      break;
 

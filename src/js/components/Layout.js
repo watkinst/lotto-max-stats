@@ -13,12 +13,12 @@ export default class Layout extends React.Component {
   }
 
   componentDidMount() {
-    Actions.fetchData();
     setInterval(Actions.fetchData.bind(this), 120000);
   }
 
   componentWillMount() {
     DataStore.addChangeListener(this.onChange.bind(this));
+    Actions.fetchData();
   }
 
   componentWillUnmount() {
@@ -34,7 +34,7 @@ export default class Layout extends React.Component {
   render() {
     const { data } = this.state;
     console.log(data);
-    if (this.state.data) {
+    if (data) {
       return (
         <div>
           <Header title={data.header.title} tagline={data.header.tagline} />
