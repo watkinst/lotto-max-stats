@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import Header from './Layout/Header';
+import Footer from './Layout/Footer';
 import DataStore from '../stores/DataStore';
 import Actions from '../actions/Actions';
 

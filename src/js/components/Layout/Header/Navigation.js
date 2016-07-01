@@ -1,6 +1,6 @@
 import React from 'react';
 
-require('../../../sass/navigation.scss');
+require('../../../../sass/navigation.scss');
 
 export default class Navigation extends React.Component {
   render() {
