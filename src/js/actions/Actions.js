@@ -2,9 +2,51 @@ import Dispatcher from '../dispatcher/Dispatcher';
 import Constants from '../constants/Constants';
 
 var Actions = {
-  fetchData: () => {
+  fetchJsonData: () => {
     Dispatcher.dispatch({
-      actionType: Constants.DATA_FETCH
+      actionType: Constants.JSON_DATA_FETCH
+    });
+  },
+  fetchSimData: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_DATA_FETCH
+    });
+  },
+  startSim: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_START
+    });
+  },
+  stopSim: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_STOP
+    });
+  },
+  clearResults: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_CLEAR_RESULTS
+    });
+  },
+  clearAll: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_CLEAR_ALL
+    });
+  },
+  selectNumber: (number) => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_SELECT_NUMBER,
+      selection: number
+    });
+  },
+  deselectNumber: (number) => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_DESELECT_NUMBER,
+      selection: number
+    });
+  },
+  selectRandomNumbers: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_SELECT_RANDOM_NUMBERS,
     });
   }
 };

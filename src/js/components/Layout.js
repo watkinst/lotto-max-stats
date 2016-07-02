@@ -14,12 +14,12 @@ export default class Layout extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(Actions.fetchData.bind(this), 120000);
+    setInterval(Actions.fetchJsonData.bind(this), 120000);
   }
 
   componentWillMount() {
     DataStore.addChangeListener(this.onChange.bind(this));
-    Actions.fetchData();
+    Actions.fetchJsonData();
   }
 
   componentWillUnmount() {

@@ -6,7 +6,7 @@ import Constants from '../constants/Constants';
 class DataStore extends EventEmitter {
 	constructor() {
 		super();
-		this.data = this.handleActions(Constants.DATA_FETCH);
+		this.data = this.handleActions(Constants.JSON_DATA_FETCH);
 	}
 
 	emitChange() {
@@ -33,7 +33,7 @@ class DataStore extends EventEmitter {
 
 	  switch(action.actionType) {
 
-	    case Constants.DATA_FETCH:
+	    case Constants.JSON_DATA_FETCH:
 
         axios.get('../../data/data.json')
           .then((response) => {
