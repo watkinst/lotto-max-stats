@@ -2,10 +2,6 @@ import React from 'react';
 
 export default class Stats extends React.Component {
   
-  shouldComponentUpdate(nextProps, nextState) {
-    return this.props.value !== nextProps.value;
-  }
-
   render() {
     return (
       <div>

@@ -5,5 +5,7 @@ nav ul {
   nav ul li {
     display: inline-block;
     margin-right: 10px; }
+.btn {
+  margin-right: 5px; }
 
 /*# sourceMappingURL=lmt.min.css.map*/
