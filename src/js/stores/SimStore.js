@@ -6,6 +6,7 @@ import Constants from '../constants/Constants';
 class SimStore extends EventEmitter {
   constructor() {
     super();
+    this.interval = null;
     this.data = {
       isRunning: 0,
       numberOfDraws: 0,
@@ -69,7 +70,12 @@ class SimStore extends EventEmitter {
 
   start() {
     this.setRunningState(1);
-    while (this.data.isRunning) {
+    this.run();
+    this.interval = setInterval(this.run.bind(this), 0);    
+  }
+
+  run() {
+    if (this.data.isRunning) {
 
       this.incrementDrawCount();
 
@@ -108,14 +114,12 @@ class SimStore extends EventEmitter {
           // do nothing
       }
 
-      if (this.data.numberOfDraws % 100000 === 0) {
-        console.log(this.data.numberOfDraws);
-        this.emitChange();
-      }
-
+      this.emitChange();
+      
       if (this.arraysEqual(this.data.myNumbers, drawNumbers)) {
         this.setRunningState(0);
         this.setWinner(1);
+        clearInterval(this.interval);
         this.emitChange();
       }
     }
@@ -203,6 +207,7 @@ class SimStore extends EventEmitter {
 
   stop() {
     this.setRunningState(0);
+    clearInterval(this.interval);
     this.emitChange();
   }
 
@@ -224,6 +229,7 @@ class SimStore extends EventEmitter {
     this.clearResults();
     this.setWinner(0);
     this.setNumberOfDraws(0);
+    this.emitChange();
   }
 
   select(selection) {
