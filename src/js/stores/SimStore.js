@@ -220,7 +220,7 @@ class SimStore extends EventEmitter {
     this.data.matches = this.initialize(10);
     this.data.frequency = this.initialize(49);
     this.setWinner(0);
-    this.data.numberOfDraws = 0;
+    this.setNumberOfDraws(0);
     this.emitChange();
   }
 
