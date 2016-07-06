@@ -1,5 +1,4 @@
 import { EventEmitter } from 'events';
-import $ from 'jquery';
 import Dispatcher from '../dispatcher/Dispatcher';
 import Constants from '../constants/Constants';
 
@@ -80,7 +79,7 @@ class SimStore extends EventEmitter {
       this.incrementDrawCount();
 
       var drawNumbers = this.getNumbers();
-      var bonusNumber = this.getRandomInt(1,49);
+      var bonusNumber = this.getBonusNumber(drawNumbers);
 
       this.updateFrequency(drawNumbers);
              
@@ -134,11 +133,9 @@ class SimStore extends EventEmitter {
   }
 
   updateFrequency(array) {
-    $.each(array, this.updateFrequencyCallback.bind(this));
-  }
-
-  updateFrequencyCallback(index, element) {
-    this.data.frequency[element - 1]++;
+    for (var i = 0; i < array.length; i++) {
+      this.data.frequency[array[i] - 1]++
+    }
   }
 
   incrementDrawCount() {
@@ -156,7 +153,7 @@ class SimStore extends EventEmitter {
   }
 
   bonusMatched(array, number) {
-    return $.inArray(number, array) == 0;
+    return array.indexOf(number) > -1;
   }
 
   getPercent(number) {
@@ -167,11 +164,22 @@ class SimStore extends EventEmitter {
     var numbers = [];
     while (numbers.length < 7) {
       var randomInt = this.getRandomInt(1, 49);
-      if ($.inArray(randomInt, numbers) == -1) {
+      if (numbers.indexOf(randomInt) == -1) {
         numbers.push(randomInt);
       }
     }
     return numbers.sort(this.sortNumbers);
+  }
+
+  getBonusNumber(drawNumbers) {
+    var bonusNumber = null;
+    while (bonusNumber == null) {
+      var randomInt = this.getRandomInt(1,49);
+      if (drawNumbers.indexOf(randomInt) == -1) {
+        bonusNumber = randomInt;
+      }
+    }    
+    return bonusNumber;
   }
 
   getRandomInt(min, max) {
