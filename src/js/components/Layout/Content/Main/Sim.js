@@ -60,7 +60,9 @@ export default class Sim extends React.Component {
     return (
       <div>
         <Intro />
-        <Grid selections={data.myNumbers} />
+        <Grid selections={data.myNumbers}
+              select={this.select.bind(this)}
+              deselect={this.deselect.bind(this)} />
         <Stats draws={data.numberOfDraws}
                matches={data.matches}
                frequency={data.frequency} />
@@ -69,8 +71,6 @@ export default class Sim extends React.Component {
                      start={this.start.bind(this)}
                      stop={this.stop.bind(this)}
                      reset={this.reset.bind(this)}
-                     select={this.select.bind(this)}
-                     deselect={this.deselect.bind(this)}
                      random={this.random.bind(this)} />
       </div>
     );
