@@ -22,14 +22,9 @@ var Actions = {
       actionType: Constants.SIM_STOP
     });
   },
-  clearResults: () => {
+  reset: () => {
     Dispatcher.dispatch({
-      actionType: Constants.SIM_CLEAR_RESULTS
-    });
-  },
-  clearAll: () => {
-    Dispatcher.dispatch({
-      actionType: Constants.SIM_CLEAR_ALL
+      actionType: Constants.SIM_RESET
     });
   },
   selectNumber: (number) => {

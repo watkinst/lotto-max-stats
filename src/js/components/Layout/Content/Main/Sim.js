@@ -38,12 +38,8 @@ export default class Sim extends React.Component {
     Actions.stopSim();
   }
 
-  clearResults() {
-    Actions.clearResults();
-  }
-
-  clearAll() {
-    Actions.clearAll();
+  reset() {
+    Actions.reset();
   }
 
   select() {
@@ -68,10 +64,11 @@ export default class Sim extends React.Component {
         <Stats draws={data.numberOfDraws}
                matches={data.matches}
                frequency={data.frequency} />
-        <ButtonGroup start={this.start.bind(this)}
+        <ButtonGroup running={data.isRunning}
+                     draws={data.numberOfDraws}
+                     start={this.start.bind(this)}
                      stop={this.stop.bind(this)}
-                     clearResults={this.clearResults.bind(this)}
-                     clearAll={this.clearAll.bind(this)}
+                     reset={this.reset.bind(this)}
                      select={this.select.bind(this)}
                      deselect={this.deselect.bind(this)}
                      random={this.random.bind(this)} />

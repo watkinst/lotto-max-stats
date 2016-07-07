@@ -7,9 +7,9 @@ class SimStore extends EventEmitter {
     super();
     this.interval = null;
     this.data = {
-      isRunning: 0,
+      isRunning: false,
       numberOfDraws: 0,
-      winner: 0,
+      winner: false,
       myNumbers: [],
       matches: this.initialize(10),
       frequency: this.initialize(49)
@@ -34,33 +34,44 @@ class SimStore extends EventEmitter {
 
   handleActions(action) {
 
-    switch(action.actionType) {
-
-      // NOTE: These will be conditional, i.e. - you can't start
-      // the sim without first having picked 7 numbers, etc
+    switch(action.actionType) {      
       case Constants.SIM_START:
-        this.start();
+        if ((!this.data.isRunning) &&
+            (this.data.myNumbers.length == 7)) {
+          this.start();
+        }
         break;
       case Constants.SIM_STOP:
-        this.stop();
-        break;
-      case Constants.SIM_CLEAR_SELECTIONS:
-        this.clearSelections();
-        break;
-      case Constants.SIM_CLEAR_RESULTS:
-        this.clearResults();
-        break;
-      case Constants.SIM_CLEAR_ALL:
-        this.clearAll();
+        if (this.data.isRunning) {
+          this.stop();
+        }
+        break;      
+      case Constants.SIM_RESET:
+        if ((!this.data.isRunning) &&
+            ((this.data.numberOfDraws > 0) ||
+             (this.data.myNumbers.length > 0))) {
+          this.reset();
+        }
         break;
       case Constants.SIM_SELECT_NUMBER:
-        this.select(action.selection);
+        if ((!this.data.isRunning) &&
+            (this.data.myNumbers.length < 7)) {
+          this.select(action.selection);
+        }
         break;
       case Constants.SIM_DESELECT_NUMBER:
-        this.deselect(action.selection);
+        if ((!this.data.isRunning) &&
+            (this.data.myNumbers.length >= 1)) {
+          this.deselect(action.selection);
+        }
         break;
       case Constants.SIM_SELECT_RANDOM_NUMBERS:
-        this.random();
+        if (!this.data.isRunning) {
+          if (this.data.numberOfDraws > 0) {
+            this.reset();
+          }
+          this.random();
+        }
         break;
       default:
         // do nothing
@@ -68,7 +79,7 @@ class SimStore extends EventEmitter {
   }
 
   start() {
-    this.setRunningState(1);
+    this.setRunningState(true);
     this.run();
     this.interval = setInterval(this.run.bind(this), 0);    
   }
@@ -116,8 +127,8 @@ class SimStore extends EventEmitter {
       this.emitChange();
       
       if (this.arraysEqual(this.data.myNumbers, drawNumbers)) {
-        this.setRunningState(0);
-        this.setWinner(1);
+        this.setRunningState(false);
+        this.setWinner(true);
         clearInterval(this.interval);
         this.emitChange();
       }
@@ -214,28 +225,16 @@ class SimStore extends EventEmitter {
   }
 
   stop() {
-    this.setRunningState(0);
+    this.setRunningState(false);
     clearInterval(this.interval);
     this.emitChange();
   }
 
-  clearSelections() {
+  reset() {
     this.data.myNumbers = [];
-    this.emitChange();
-  }
-
-  clearResults() {
     this.data.matches = this.initialize(10);
     this.data.frequency = this.initialize(49);
-    this.setWinner(0);
-    this.setNumberOfDraws(0);
-    this.emitChange();
-  }
-
-  clearAll() {
-    this.clearSelections();
-    this.clearResults();
-    this.setWinner(0);
+    this.setWinner(false);
     this.setNumberOfDraws(0);
     this.emitChange();
   }
