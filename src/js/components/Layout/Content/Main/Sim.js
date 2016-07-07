@@ -65,7 +65,7 @@ export default class Sim extends React.Component {
                matches={data.matches}
                frequency={data.frequency} />
         <ButtonGroup running={data.isRunning}
-                     draws={data.numberOfDraws}
+                     length={data.myNumbers.length}
                      start={this.start.bind(this)}
                      stop={this.stop.bind(this)}
                      reset={this.reset.bind(this)}
