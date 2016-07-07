@@ -8,13 +8,14 @@ import Actions from '../actions/Actions';
 export default class Layout extends React.Component {
   constructor() {
     super();
+    this.interval = null;
     this.state = {
       data: DataStore.getData()
     };
   }
 
   componentDidMount() {
-    setInterval(Actions.fetchJsonData.bind(this), 120000);
+    this.interval = setInterval(Actions.fetchJsonData.bind(this), 120000);
   }
 
   componentWillMount() {
@@ -24,6 +25,7 @@ export default class Layout extends React.Component {
 
   componentWillUnmount() {
     DataStore.removeChangeListener(this.onChange.bind(this));
+    clearInterval(this.interval);
   }
 
   onChange() {
