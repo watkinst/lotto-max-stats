@@ -9,7 +9,8 @@ export default class ButtonGroup extends React.Component {
     var stopButtonState = (this.props.running)
                             ? 'enabled'
                             : 'disabled';
-    var startResetButtonState = (this.props.running || this.props.length == 0)
+    var startResetButtonState = (this.props.running ||
+                                 this.props.length == 0)
                                   ? 'disabled'
                                   : 'enabled';
     return (
