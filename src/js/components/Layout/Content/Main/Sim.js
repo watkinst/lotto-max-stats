@@ -2,7 +2,7 @@ import React from 'react';
 import Intro from './Sim/Intro';
 import Grid from './Sim/Grid';
 import Stats from './Sim/Stats';
-import ButtonGroup from './Sim/ButtonGroup';
+import SimButtonGroup from './Sim/SimButtonGroup';
 import SimStore from '../../../../stores/SimStore';
 import Actions from '../../../../actions/Actions';
 
@@ -42,12 +42,12 @@ export default class Sim extends React.Component {
     Actions.reset();
   }
 
-  select() {
-    Action.selectNumber();
+  select(number) {
+    Actions.selectNumber(number);
   }
 
-  deselect() {
-    Actions.deselectNumber();
+  deselect(number) {
+    Actions.deselectNumber(number);
   }
 
   random() {
@@ -62,16 +62,18 @@ export default class Sim extends React.Component {
         <Intro />
         <Grid selections={data.myNumbers}
               select={this.select.bind(this)}
-              deselect={this.deselect.bind(this)} />
+              deselect={this.deselect.bind(this)}
+              running={data.isRunning}
+              length={data.myNumbers.length} />
         <Stats draws={data.numberOfDraws}
                matches={data.matches}
                frequency={data.frequency} />
-        <ButtonGroup running={data.isRunning}
-                     length={data.myNumbers.length}
-                     start={this.start.bind(this)}
-                     stop={this.stop.bind(this)}
-                     reset={this.reset.bind(this)}
-                     random={this.random.bind(this)} />
+        <SimButtonGroup running={data.isRunning}
+                        length={data.myNumbers.length}
+                        start={this.start.bind(this)}
+                        stop={this.stop.bind(this)}
+                        reset={this.reset.bind(this)}
+                        random={this.random.bind(this)} />
       </div>
     );
   }

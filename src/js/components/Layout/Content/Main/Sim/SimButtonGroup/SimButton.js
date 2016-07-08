@@ -1,8 +1,8 @@
 import React from 'react';
 
-require('../../../../../../../sass/button.scss');
+require('../../../../../../../sass/simbutton.scss');
 
-export default class Button extends React.Component {
+export default class SimButton extends React.Component {
 
   handleClick(e) {
     this.props.action();
@@ -10,7 +10,7 @@ export default class Button extends React.Component {
 
   render() {
     return (
-      <button className={"btn btn-primary " + this.props.buttonState}
+      <button className={"btn btn-primary btn-sim " + this.props.buttonState}
               onClick={this.handleClick.bind(this)}>
         {this.props.text}
       </button>

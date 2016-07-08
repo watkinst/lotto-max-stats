@@ -227,6 +227,7 @@ class SimStore extends EventEmitter {
   stop() {
     this.setRunningState(false);
     clearInterval(this.interval);
+    console.clear();
     this.emitChange();
   }
 
