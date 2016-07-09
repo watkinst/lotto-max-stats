@@ -66,10 +66,7 @@ class SimStore extends EventEmitter {
         }
         break;
       case Constants.SIM_SELECT_RANDOM_NUMBERS:
-        if (!this.data.isRunning) {
-          if (this.data.numberOfDraws > 0) {
-            this.reset();
-          }
+        if (!this.data.isRunning) {          
           this.random();
         }
         break;
@@ -258,6 +255,7 @@ class SimStore extends EventEmitter {
   }
 
   random() {
+    this.reset();
     this.data.myNumbers = this.getNumbers();
     console.log(this.data.myNumbers);
     this.emitChange();
