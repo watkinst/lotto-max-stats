@@ -261,6 +261,7 @@ class SimStore extends EventEmitter {
   select(selection) {
     this.data.myNumbers.push(selection);
     this.data.myNumbers.sort(this.sortNumbers);
+    this.clearResults();
     this.emitChange();
   }
 

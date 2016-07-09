@@ -2,48 +2,67 @@ import React from 'react';
 import SimButton from './SimButtonGroup/SimButton';
 
 export default class SimButtonGroup extends React.Component {
-  render() {
-    var startButtonState = (this.props.running ||
-                            this.props.length < 7)
-                              ? 'disabled'
-                              : 'enabled';
-    var stopButtonState = (this.props.running)
-                            ? 'enabled'
-                            : 'disabled';
-    var randomButtonState = (this.props.running)
-                              ? 'disabled'
-                              : 'enabled';
-    var clearSelectionsButtonState = (this.props.running ||
-                                      this.props.length < 1)
-                                       ? 'disabled'
-                                       : 'enabled';
-    var clearResultsButtonState = (this.props.running ||
-                                   this.props.draws == 0)
-                                     ? 'disabled'
-                                     : 'enabled';
-    var clearAllButtonState = (this.props.running ||
-                               this.props.length < 7 ||
-                               this.props.draws == 0)
-                                 ? 'disabled'
-                                 : 'enabled';
+
+  getButtonState(type) {
+    var state = '';
+    switch(type) {
+      case 'start':
+        state = (this.props.running || this.props.length < 7)
+                  ? 'disabled'
+                  : 'enabled';
+        break;
+      case 'stop':
+        state = (this.props.running)
+                  ? 'enabled'
+                  : 'disabled';
+        break;
+      case 'random':
+        state = (this.props.running)
+                  ? 'disabled'
+                  : 'enabled';
+        break;
+      case 'selections':
+        state = (this.props.running || this.props.length < 1)
+                  ? 'disabled'
+                  : 'enabled';
+        break;
+      case 'results':
+        state = (this.props.running || this.props.draws == 0)
+                  ? 'disabled'
+                  : 'enabled';
+        break;
+      case 'all':
+        state = (this.props.running || this.props.length < 7 ||
+                 this.props.draws == 0)
+                  ? 'disabled'
+                  : 'enabled';
+        break;
+      default:
+        // do nothing
+    }
+
+    return state;
+  }
+
+  render() {    
     return (
       <div>
-        <SimButton buttonState={startButtonState}
+        <SimButton buttonState={this.getButtonState('start')}
                    text="Start"
                    action={this.props.start} />
-        <SimButton buttonState={stopButtonState}
+        <SimButton buttonState={this.getButtonState('stop')}
                    text="Stop"
                    action={this.props.stop} />
-        <SimButton buttonState={randomButtonState}
+        <SimButton buttonState={this.getButtonState('random')}
                    text="Random"
                    action={this.props.random} />
-        <SimButton buttonState={clearSelectionsButtonState}
+        <SimButton buttonState={this.getButtonState('selections')}
                    text="Clear Selections"
                    action={this.props.clearSelections} />
-        <SimButton buttonState={clearResultsButtonState}
+        <SimButton buttonState={this.getButtonState('results')}
                    text="Clear Results"
                    action={this.props.clearResults} />
-        <SimButton buttonState={clearAllButtonState}
+        <SimButton buttonState={this.getButtonState('all')}
                    text="Clear All"
                    action={this.props.clearAll} />
       </div>
