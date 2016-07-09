@@ -233,11 +233,15 @@ class SimStore extends EventEmitter {
 
   reset() {
     this.data.myNumbers = [];
+    this.clearResults();
+    this.emitChange();
+  }
+
+  clearResults() {
     this.data.matches = this.initialize(10);
     this.data.frequency = this.initialize(49);
     this.setWinner(false);
     this.setNumberOfDraws(0);
-    this.emitChange();
   }
 
   select(selection) {
@@ -249,6 +253,7 @@ class SimStore extends EventEmitter {
   deselect(selection) {
     var index = this.data.myNumbers.indexOf(selection);
     this.data.myNumbers.splice(index, 1);
+    this.clearResults();
     this.emitChange();
   }
 
