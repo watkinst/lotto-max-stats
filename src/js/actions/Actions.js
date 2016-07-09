@@ -22,9 +22,19 @@ var Actions = {
       actionType: Constants.SIM_STOP
     });
   },
-  reset: () => {
+  clearSelections: () => {
     Dispatcher.dispatch({
-      actionType: Constants.SIM_RESET
+      actionType: Constants.SIM_CLEAR_SELECTIONS
+    });
+  },
+  clearResults: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_CLEAR_RESULTS
+    });
+  },
+  clearAll: () => {
+    Dispatcher.dispatch({
+      actionType: Constants.SIM_CLEAR_ALL
     });
   },
   selectNumber: (number) => {
@@ -41,7 +51,7 @@ var Actions = {
   },
   selectRandomNumbers: () => {
     Dispatcher.dispatch({
-      actionType: Constants.SIM_SELECT_RANDOM_NUMBERS,
+      actionType: Constants.SIM_SELECT_RANDOM_NUMBERS
     });
   }
 };

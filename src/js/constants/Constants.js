@@ -5,6 +5,7 @@ var Constants = KeyMirror({
   SIM_DATA_FETCH: null,
   SIM_START: null,
   SIM_STOP: null,
+  SIM_CLEAR_SELECTIONS: null,
   SIM_CLEAR_RESULTS: null,
   SIM_CLEAR_ALL: null,
   SIM_SELECT_NUMBER: null,

@@ -24,15 +24,17 @@ export default class GridButtonGroup extends React.Component {
     
     return (
       <div>
-        {buttons.map(function(button, index) {
-          return (
-            <GridButton key={index}
-                        text={index + 1}
-                        select={button.select}
-                        deselect={button.deselect}
-                        selections={button.selections} />
-          )
-        })}        
+        {buttons.map(
+          function(button, index) {
+            return (
+              <GridButton key={index}
+                          text={index + 1}
+                          select={button.select}
+                          deselect={button.deselect}
+                          selections={button.selections} />
+            );
+          }
+        )}        
       </div>
     );
   }

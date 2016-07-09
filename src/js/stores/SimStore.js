@@ -45,12 +45,24 @@ class SimStore extends EventEmitter {
         if (this.data.isRunning) {
           this.stop();
         }
+        break;
+      case Constants.SIM_CLEAR_SELECTIONS:
+        if ((!this.data.isRunning) &&
+            (this.data.myNumbers.length > 0)) {
+          this.clearSelections();
+        }
+        break;
+      case Constants.SIM_CLEAR_RESULTS:
+        if ((!this.data.isRunning) &&
+            (this.data.numberOfDraws > 0)) {
+          this.clearResults();
+        }
         break;      
-      case Constants.SIM_RESET:
+      case Constants.SIM_CLEAR_ALL:
         if ((!this.data.isRunning) &&
             ((this.data.numberOfDraws > 0) ||
              (this.data.myNumbers.length > 0))) {
-          this.reset();
+          this.clearAll();
         }
         break;
       case Constants.SIM_SELECT_NUMBER:
@@ -228,9 +240,13 @@ class SimStore extends EventEmitter {
     this.emitChange();
   }
 
-  reset() {
+  clearAll() {
     this.data.myNumbers = [];
     this.clearResults();
+  }
+
+  clearSelections() {
+    this.data.myNumbers = [];
     this.emitChange();
   }
 
@@ -239,6 +255,7 @@ class SimStore extends EventEmitter {
     this.data.frequency = this.initialize(49);
     this.setWinner(false);
     this.setNumberOfDraws(0);
+    this.emitChange();
   }
 
   select(selection) {
@@ -251,11 +268,10 @@ class SimStore extends EventEmitter {
     var index = this.data.myNumbers.indexOf(selection);
     this.data.myNumbers.splice(index, 1);
     this.clearResults();
-    this.emitChange();
   }
 
   random() {
-    this.reset();
+    this.clearAll();
     this.data.myNumbers = this.getNumbers();
     console.log(this.data.myNumbers);
     this.emitChange();
