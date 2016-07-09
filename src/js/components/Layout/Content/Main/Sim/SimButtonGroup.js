@@ -3,25 +3,29 @@ import SimButton from './SimButtonGroup/SimButton';
 
 export default class SimButtonGroup extends React.Component {
   render() {
-    var randomButtonState = (this.props.running)
+    var startButtonState = (this.props.running ||
+                            this.props.length < 7)
                               ? 'disabled'
                               : 'enabled';
     var stopButtonState = (this.props.running)
                             ? 'enabled'
                             : 'disabled';
-    var startButtonState = (this.props.running ||
-                            this.props.length < 7)
-                              ? 'disabled'
-                              : 'enabled';
-    var clearButtonState = (this.props.running ||
-                            this.props.length < 7 ||
-                            this.props.draws == 0)
+    var randomButtonState = (this.props.running)
                               ? 'disabled'
                               : 'enabled';
     var clearSelectionsButtonState = (this.props.running ||
                                       this.props.length < 1)
                                        ? 'disabled'
                                        : 'enabled';
+    var clearResultsButtonState = (this.props.running ||
+                                   this.props.draws == 0)
+                                     ? 'disabled'
+                                     : 'enabled';
+    var clearAllButtonState = (this.props.running ||
+                               this.props.length < 7 ||
+                               this.props.draws == 0)
+                                 ? 'disabled'
+                                 : 'enabled';
     return (
       <div>
         <SimButton buttonState={startButtonState}
@@ -36,10 +40,10 @@ export default class SimButtonGroup extends React.Component {
         <SimButton buttonState={clearSelectionsButtonState}
                    text="Clear Selections"
                    action={this.props.clearSelections} />
-        <SimButton buttonState={clearButtonState}
+        <SimButton buttonState={clearResultsButtonState}
                    text="Clear Results"
                    action={this.props.clearResults} />
-        <SimButton buttonState={clearButtonState}
+        <SimButton buttonState={clearAllButtonState}
                    text="Clear All"
                    action={this.props.clearAll} />
       </div>
