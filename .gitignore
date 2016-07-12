@@ -1,2 +1,6 @@
 # Dependency directories
 node_modules
+src/lms.min.css
+src/lms.min.css.map
+src/lms.min.js
+src/lms.min.js.map
