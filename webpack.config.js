@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   context: path.join(__dirname, 'src'),
   devtool: debug ? 'source-map' : null,
-  entry: './js/lmt.js',
+  entry: './js/lms.js',
   module: {
     loaders: [
       {
@@ -29,16 +29,16 @@ module.exports = {
   },
   output: {
     path: __dirname + '/src/',
-    filename: 'lmt.min.js'
+    filename: 'lms.min.js'
   },
   sassLoader: {
     includePaths: ['src/sass']
   },
   plugins: debug
    ? [
-    new ExtractTextPlugin('lmt.min.css', { allChunks: true })
+    new ExtractTextPlugin('lms.min.css', { allChunks: true })
    ] : [
-    new ExtractTextPlugin('lmt.min.css', { allChunks: true }),
+    new ExtractTextPlugin('lms.min.css', { allChunks: true }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
