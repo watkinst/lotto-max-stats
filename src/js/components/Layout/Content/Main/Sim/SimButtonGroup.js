@@ -46,7 +46,7 @@ export default class SimButtonGroup extends React.Component {
 
   render() {    
     return (
-      <div>
+      <div className="col-xs-12 col-lg-4">
         <SimButton buttonState={this.getButtonState('start')}
                    text="Start"
                    action={this.props.start} />

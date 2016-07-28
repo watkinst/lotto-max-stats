@@ -23,7 +23,7 @@ export default class GridButtonGroup extends React.Component {
     var buttons = this.populateButtons();
     
     return (
-      <div>
+      <div className="col-xs-12 col-sm-6 col-lg-4">
         {buttons.map(
           function(button, index) {
             return (

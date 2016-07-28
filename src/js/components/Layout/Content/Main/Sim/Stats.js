@@ -4,7 +4,7 @@ export default class Stats extends React.Component {
   
   render() {
     return (
-      <div>        
+      <div className="col-xs-12 col-sm-6 col-lg-4">        
         <h5>7 of 7: {this.props.matches[9]}</h5>
         <h5>6 of 7 + bonus: {this.props.matches[8]}</h5>
         <h5>6 of 7: {this.props.matches[7]}</h5>
