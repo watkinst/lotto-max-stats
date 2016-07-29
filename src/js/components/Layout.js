@@ -5,6 +5,8 @@ import Footer from './Layout/Footer';
 import DataStore from '../stores/DataStore';
 import Actions from '../actions/Actions';
 
+require('../../sass/layout.scss');
+
 export default class Layout extends React.Component {
   constructor() {
     super();
@@ -39,9 +41,11 @@ export default class Layout extends React.Component {
     console.log(data);
     if (data) {
       return (
-        <div className="container-fluid">
+        <div>
           <Header title={data.header.title} tagline={data.header.tagline} />
-          <Content data={data.draws} />
+          <div className="container-fluid">
+            <Content data={data.draws} />
+          </div>
           <Footer />
         </div>
       );

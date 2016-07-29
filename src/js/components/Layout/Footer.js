@@ -3,10 +3,10 @@ import React from 'react';
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="row">
-        <div className="col-xs-12">
+      <div className="footer">
+        
           <footer>footer</footer>
-        </div>
+        
       </div>
     );
   }

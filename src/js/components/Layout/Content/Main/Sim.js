@@ -68,7 +68,7 @@ export default class Sim extends React.Component {
     const { data } = this.state;
 
     return (
-      <div className="col-xs-12">
+      <div className="col-xs-12 col-md-6">
         <div className="sim-container">
           <div className="row">
             <Intro />
