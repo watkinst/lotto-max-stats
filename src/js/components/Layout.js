@@ -42,7 +42,7 @@ export default class Layout extends React.Component {
     if (data) {
       return (
         <div>
-          <Header title={data.header.title} tagline={data.header.tagline} />
+          <Header />
           <div className="container-fluid">
             <Content data={data.draws} />
           </div>
