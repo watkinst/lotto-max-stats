@@ -1,21 +1,49 @@
 import React from 'react';
 
+require('../../../../../../sass/stats.scss');
+
 export default class Stats extends React.Component {
   
   render() {
     return (
       <div className="col-xs-12">
-        <h4>Total Draws: {this.props.draws}</h4>        
-        <h4>7 of 7: {this.props.matches[9]}</h4>
-        <h4>6 of 7 + bonus: {this.props.matches[8]}</h4>
-        <h4>6 of 7: {this.props.matches[7]}</h4>
-        <h4>5 of 7: {this.props.matches[6]}</h4>
-        <h4>4 of 7: {this.props.matches[5]}</h4>
-        <h4>3 of 7 + bonus: {this.props.matches[4]}</h4>
-        <h4>3 of 7: {this.props.matches[3]}</h4>
-        <h4>2 of 7: {this.props.matches[2]}</h4>
-        <h4>1 of 7: {this.props.matches[1]}</h4>
-        <h4>0 of 7: {this.props.matches[0]}</h4>        
+        <div className="stats">
+          <div className="row">
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default"># of Draws: {this.props.draws}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">        
+              <span className="label label-default">7 / 7: {this.props.matches[9]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">6 / 7 + bonus: {this.props.matches[8]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">6 / 7: {this.props.matches[7]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">5 / 7: {this.props.matches[6]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">4 / 7: {this.props.matches[5]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">3 / 7 + bonus: {this.props.matches[4]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">3 / 7: {this.props.matches[3]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">2 / 7: {this.props.matches[2]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">1 / 7: {this.props.matches[1]}</span>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <span className="label label-default">0 / 7: {this.props.matches[0]}</span>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

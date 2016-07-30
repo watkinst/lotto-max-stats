@@ -1,6 +1,8 @@
 import React from 'react';
 import SimButton from './SimButtonGroup/SimButton';
 
+require('../../../../../../sass/simbuttongroup.scss');
+
 export default class SimButtonGroup extends React.Component {
 
   getButtonState(type) {
@@ -46,25 +48,27 @@ export default class SimButtonGroup extends React.Component {
 
   render() {    
     return (
-      <div className="col-xs-12">
-        <SimButton buttonState={this.getButtonState('start')}
-                   text="Start"
-                   action={this.props.start} />
-        <SimButton buttonState={this.getButtonState('stop')}
-                   text="Stop"
-                   action={this.props.stop} />
-        <SimButton buttonState={this.getButtonState('random')}
-                   text="Random"
-                   action={this.props.random} />
-        <SimButton buttonState={this.getButtonState('selections')}
-                   text="Clear Selections"
-                   action={this.props.clearSelections} />
-        <SimButton buttonState={this.getButtonState('results')}
-                   text="Clear Results"
-                   action={this.props.clearResults} />
-        <SimButton buttonState={this.getButtonState('all')}
-                   text="Clear All"
-                   action={this.props.clearAll} />
+      <div className="col-xs-12 col-sm-6">
+        <div className="sim-button-group">
+          <SimButton buttonState={this.getButtonState('start')}
+                     text="Start"
+                     action={this.props.start} />
+          <SimButton buttonState={this.getButtonState('stop')}
+                     text="Stop"
+                     action={this.props.stop} />
+          <SimButton buttonState={this.getButtonState('random')}
+                     text="Random"
+                     action={this.props.random} />
+          <SimButton buttonState={this.getButtonState('selections')}
+                     text="Clear Picks"
+                     action={this.props.clearSelections} />
+          <SimButton buttonState={this.getButtonState('results')}
+                     text="Clear Results"
+                     action={this.props.clearResults} />
+          <SimButton buttonState={this.getButtonState('all')}
+                     text="Clear All"
+                     action={this.props.clearAll} />
+        </div>
       </div>
     );
   }
