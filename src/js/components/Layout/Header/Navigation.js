@@ -5,7 +5,7 @@ require('../../../../sass/navigation.scss');
 export default class Navigation extends React.Component {
   render() {
     return (
-    	<nav className="navbar navbar-primary navbar-inverse navbar-fixed-top">
+    	<nav className="navbar navbar-inverse navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
