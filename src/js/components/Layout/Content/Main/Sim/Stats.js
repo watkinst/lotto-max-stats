@@ -8,9 +8,9 @@ export default class Stats extends React.Component {
     return (
       <div className="col-xs-12">
         <div className="stats">
+          <span className="label label-default"># of Draws: {this.props.draws}</span>
           <div className="row">
-            <div className="col-xs-12 col-sm-6">
-              <span className="label label-default"># of Draws: {this.props.draws}</span>
+            <div className="col-xs-12 col-sm-6">              
               <span className="label label-default">7 / 7: {this.props.matches[9]}</span>
               <span className="label label-default">6 / 7 + bonus: {this.props.matches[8]}</span>
               <span className="label label-default">6 / 7: {this.props.matches[7]}</span>
