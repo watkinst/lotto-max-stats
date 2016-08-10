@@ -44,7 +44,7 @@ export default class Layout extends React.Component {
         <div>
           <Header />
           <div className="container-fluid">
-            <Content data={data.draws} />
+            <Content data={data} />
           </div>
           <Footer />
         </div>

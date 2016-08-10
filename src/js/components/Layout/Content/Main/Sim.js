@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from './Sim/Intro';
+import SimIntro from './Sim/SimIntro';
 import Grid from './Sim/Grid';
 import Stats from './Sim/Stats';
 import SimButtonGroup from './Sim/SimButtonGroup';
@@ -71,7 +71,7 @@ export default class Sim extends React.Component {
       <div className="col-xs-12 col-md-6">
         <div className="sim-container">
           <div className="row">
-            <Intro />
+            <SimIntro />
             <Stats draws={data.numberOfDraws}
                    matches={data.matches}
                    frequency={data.frequency} />

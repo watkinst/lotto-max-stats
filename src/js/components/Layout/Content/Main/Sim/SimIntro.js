@@ -1,8 +1,8 @@
 import React from 'react';
 
-require('../../../../../../sass/intro.scss');
+require('../../../../../../sass/simintro.scss');
 
-export default class Intro extends React.Component {
+export default class SimIntro extends React.Component {
   render() {
     return (
       <div className="col-xs-12 sim-intro">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Sim from './Main/Sim';
+import Frequency from './Main/Frequency';
 
 export default class Main extends React.Component {
   render() {
@@ -7,9 +8,7 @@ export default class Main extends React.Component {
       <div className="col-xs-12 col-lg-9">
         <div className="row">
           <Sim />
-          <div className="col-xs-12 col-md-6">
-            Some other widget will go in this area once I code it
-          </div>
+          <Frequency data={this.props.data} />
         </div>
       </div>
     );
