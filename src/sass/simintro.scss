@@ -1,0 +1,11 @@
+.sim-intro {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 390px) {
+  .sim-intro {
+    .title {
+      font-size: 23px;
+    }
+  }
+}
