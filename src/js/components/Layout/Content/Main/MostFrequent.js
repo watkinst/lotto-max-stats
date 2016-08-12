@@ -12,7 +12,7 @@ export default class MostFrequent extends React.Component {
         <div className="most-frequent-container">
           <div className="row">
             <MostFrequentIntro />
-            <MostFrequentNumbers calculateTimesDrawn={this.props.calculateTimesDrawn} />
+            <MostFrequentNumbers data={this.props.data} />
           </div>
         </div>
       </div>

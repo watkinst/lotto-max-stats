@@ -4,6 +4,60 @@ require('../../../../../../sass/mostfrequentnumbers.scss');
 
 export default class MostFrequentNumbers extends React.Component {
   
+  calculateTimesDrawn() {
+    var timesDrawn = [];
+
+    for (var i = 0; i < 49; i++) {
+      timesDrawn.push(0);
+    }
+    
+    var draws = this.props.data.draws;
+
+    for (var i = 0; i < draws.length; i++) {
+      for (var j = 0; j < draws[i].lotto_max.winning_numbers.length; j++) {
+        timesDrawn[draws[i].lotto_max.winning_numbers[j]-1]++;
+      }
+    }    
+
+    return timesDrawn;
+  }
+
+  getMostFrequentBonusNumber() {
+    var bonusNumbers = [];
+    var mostFrequentBonusNumber = 0;
+    var draws = this.props.data.draws;
+
+    for (var i = 0; i < draws.length; i++) {
+      bonusNumbers.push(draws[i].lotto_max.bonus_number);
+    }
+
+    var bonusNumberFrequency = bonusNumbers.reduce(function (acc, curr) {
+      if (typeof acc[curr] == 'undefined') {
+        acc[curr] = 1;
+      } else {
+        acc[curr] += 1;
+      }
+
+      return acc;
+    }, {});
+
+    var highestKey = 0;
+
+    for (var key in bonusNumberFrequency) {
+      if (key == 1) {
+        mostFrequentBonusNumber = key;
+        highestKey = key;
+      } else {
+        if (bonusNumberFrequency[key] > bonusNumberFrequency[highestKey]) {
+          mostFrequentBonusNumber = key;
+          highestKey = key;
+        }
+      }      
+    }
+
+    return mostFrequentBonusNumber;
+  }
+
   getMostFrequentNumbers(array) {
     var mostFrequentNumbers = [];
     var unsorted = array.slice();
@@ -23,8 +77,9 @@ export default class MostFrequentNumbers extends React.Component {
 
   render() {
 
-    var timesDrawn = this.props.calculateTimesDrawn();
-    var mostFrequentNumbers = this.getMostFrequentNumbers(timesDrawn.slice());
+    var timesDrawn = this.calculateTimesDrawn();
+    var mostFrequentNumbers = this.getMostFrequentNumbers(timesDrawn);
+    var mostFrequentBonusNumber = this.getMostFrequentBonusNumber();
 
     return (
       <div className="col-xs-12 most-frequent-numbers">
@@ -35,6 +90,7 @@ export default class MostFrequentNumbers extends React.Component {
         <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[4]}</button>
         <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[5]}</button>
         <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[6]}</button>
+        <button className="btn btn-success btn-most-frequent disabled">{mostFrequentBonusNumber}</button>
       </div>
     );
   }

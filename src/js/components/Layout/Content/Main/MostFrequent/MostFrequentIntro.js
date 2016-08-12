@@ -7,7 +7,7 @@ export default class MostFrequentIntro extends React.Component {
     return (
       <div className="col-xs-12 most-frequent-intro">
         <h2 className="title">Most Frequent Numbers</h2>
-        <p>Here are the seven most frequently drawn Lotto Max numbers, excluding the bonus number.</p>
+        <p>Here are the most frequently drawn Lotto Max numbers (bonus in green).</p>
       </div>
     );
   }
