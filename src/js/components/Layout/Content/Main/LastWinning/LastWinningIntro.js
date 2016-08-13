@@ -15,7 +15,7 @@ export default class LastWinningIntro extends React.Component {
 
     return (
       <div className="col-xs-12 last-winning-intro">
-        <h2 className="title">Last Winning Numbers</h2>
+        <h2 className="title">Last Winning Lotto Max Numbers</h2>
         <p>Here are the winning numbers from the draw held on {lastDrawDate} (bonus in green).</p>
       </div>
     );
