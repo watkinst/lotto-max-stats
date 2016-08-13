@@ -13,7 +13,7 @@ export default class LastWinning extends React.Component {
 
   render() {
     return (
-      <div className="col-xs-12">
+      <div className="col-xs-12 col-sm-6 col-md-12">
         <div className="last-winning-container">
           <div className="row">
             <LastWinningIntro data={this.props.data}
