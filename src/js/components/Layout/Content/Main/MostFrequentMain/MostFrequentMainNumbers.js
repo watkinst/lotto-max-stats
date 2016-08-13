@@ -1,8 +1,8 @@
 import React from 'react';
 
-require('../../../../../../sass/mostfrequentnumbers.scss');
+require('../../../../../../sass/mostfrequentmainnumbers.scss');
 
-export default class MostFrequentNumbers extends React.Component {
+export default class MostFrequentMainNumbers extends React.Component {
   
   calculateTimesDrawn() {
     var timesDrawn = [];
@@ -82,15 +82,15 @@ export default class MostFrequentNumbers extends React.Component {
     var mostFrequentBonusNumber = this.getMostFrequentBonusNumber();
 
     return (
-      <div className="col-xs-12 most-frequent-numbers">
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[0]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[1]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[2]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[3]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[4]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[5]}</button>
-        <button className="btn btn-default btn-most-frequent disabled">{mostFrequentNumbers[6]}</button>
-        <button className="btn btn-success btn-most-frequent disabled">{mostFrequentBonusNumber}</button>
+      <div className="col-xs-12 most-frequent-main-numbers">
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[0]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[1]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[2]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[3]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[4]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[5]}</button>
+        <button className="btn btn-default btn-most-frequent-main disabled">{mostFrequentNumbers[6]}</button>
+        <button className="btn btn-success btn-most-frequent-main disabled">{mostFrequentBonusNumber}</button>
       </div>
     );
   }
