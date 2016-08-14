@@ -7,8 +7,6 @@ export default class MostFrequentCombinedNumbers extends React.Component {
   render() {
 
     var timesDrawn = this.props.calculateTimesDrawn(2);
-    console.log('from combined');
-    console.log(timesDrawn);
     var mostFrequentNumbers = this.props.getMostFrequentNumbers(timesDrawn);
     var mostFrequentBonusNumber = this.props.getMostFrequentBonusNumber();
 

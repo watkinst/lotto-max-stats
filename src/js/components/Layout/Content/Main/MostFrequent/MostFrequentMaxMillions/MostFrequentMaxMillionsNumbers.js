@@ -7,8 +7,6 @@ export default class MostFrequentMaxMillionsNumbers extends React.Component {
   render() {
 
     var timesDrawn = this.props.calculateTimesDrawn(1);
-    console.log('from maxmillions');
-    console.log(timesDrawn);
     var mostFrequentNumbers = this.props.getMostFrequentNumbers(timesDrawn);
 
     return (
