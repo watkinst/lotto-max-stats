@@ -1,6 +1,6 @@
 import React from 'react';
 
-require('../../../../../../sass/mostfrequentmainintro.scss');
+require('../../../../../../../sass/mostfrequentmainintro.scss');
 
 export default class MostFrequentMainIntro extends React.Component {
   render() {
