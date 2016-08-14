@@ -7,7 +7,9 @@ export default class MostFrequentMainNumbers extends React.Component {
   render() {
 
     var timesDrawn = this.props.calculateTimesDrawn(0);
-    var mostFrequentNumbers = this.props.getMostFrequentNumbers(timesDrawn.slice());
+    console.log('from main');
+    console.log(timesDrawn);
+    var mostFrequentNumbers = this.props.getMostFrequentNumbers(timesDrawn);
     var mostFrequentBonusNumber = this.props.getMostFrequentBonusNumber();
 
     return (

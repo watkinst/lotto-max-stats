@@ -15,9 +15,11 @@ export default class MostFrequent extends React.Component {
         break;
       case 1:
         this.includeMaxMillionsDraws(draws, timesDrawn);
+        break;
       case 2:
         this.includeLottoMaxDraws(draws, timesDrawn);
         this.includeMaxMillionsDraws(draws, timesDrawn);
+        break;
       default:
         //do nothing
     }
