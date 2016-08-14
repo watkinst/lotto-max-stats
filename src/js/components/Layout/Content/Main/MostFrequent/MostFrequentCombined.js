@@ -2,7 +2,7 @@ import React from 'react';
 import MostFrequentCombinedIntro from './MostFrequentCombined/MostFrequentCombinedIntro';
 import MostFrequentCombinedNumbers from './MostFrequentCombined/MostFrequentCombinedNumbers';
 
-require('../../../../../sass/mostfrequentcombined.scss');
+require('../../../../../../sass/mostfrequentcombined.scss');
 
 export default class MostFrequentCombined extends React.Component {
 
@@ -12,7 +12,9 @@ export default class MostFrequentCombined extends React.Component {
         <div className="most-frequent-combined-container">
           <div className="row">
             <MostFrequentCombinedIntro />
-            <MostFrequentCombinedNumbers data={this.props.data} />
+            <MostFrequentCombinedNumbers calculateTimesDrawn={this.props.calculateTimesDrawn}
+                                         getMostFrequentNumbers={this.props.getMostFrequentNumbers}
+                                         getMostFrequentBonusNumber={this.props.getMostFrequentBonusNumber} />
           </div>
         </div>
       </div>

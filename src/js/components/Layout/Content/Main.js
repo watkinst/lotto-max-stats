@@ -1,9 +1,7 @@
 import React from 'react';
 import Sim from './Main/Sim';
 import LastWinning from './Main/LastWinning';
-import MostFrequentCombined from './Main/MostFrequentCombined';
-import MostFrequentMain from './Main/MostFrequentMain';
-import MostFrequentMaxMillions from './Main/MostFrequentMaxMillions';
+import MostFrequent from './Main/MostFrequent';
 
 export default class Main extends React.Component {
 
@@ -15,9 +13,7 @@ export default class Main extends React.Component {
           <div className="col-xs-12 col-md-6">
             <div className="row">
               <LastWinning data={this.props.data} />
-              <MostFrequentCombined data={this.props.data} />
-              <MostFrequentMain data={this.props.data} />
-              <MostFrequentMaxMillions data={this.props.data} />
+              <MostFrequent data={this.props.data} />
             </div>
           </div>
         </div>
