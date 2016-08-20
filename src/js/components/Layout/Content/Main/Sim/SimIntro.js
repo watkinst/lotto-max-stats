@@ -47,6 +47,7 @@ export default class SimIntro extends React.Component {
     return (
       <div className="col-xs-12 sim-intro">
         <h2 className="title">Lotto Max Draw Simulator</h2>
+        <p className="tagline">A fun way to pick and test your Lotto Max numbers!</p>
         <div className="panel-group">
           <div className="panel panel-primary">
             <div className="panel-heading">
