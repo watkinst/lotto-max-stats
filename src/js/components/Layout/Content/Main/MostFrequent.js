@@ -115,14 +115,14 @@ export default class MostFrequent extends React.Component {
   render() {
     return (
       <div>
-        <MostFrequentCombined calculateTimesDrawn={this.calculateTimesDrawn.bind(this)}
-                              getMostFrequentNumbers={this.getMostFrequentNumbers.bind(this)}
-                              getMostFrequentBonusNumber={this.getMostFrequentBonusNumber.bind(this)} />
         <MostFrequentMain calculateTimesDrawn={this.calculateTimesDrawn.bind(this)}
                           getMostFrequentNumbers={this.getMostFrequentNumbers.bind(this)}
                           getMostFrequentBonusNumber={this.getMostFrequentBonusNumber.bind(this)} />
         <MostFrequentMaxMillions calculateTimesDrawn={this.calculateTimesDrawn.bind(this)}
                                  getMostFrequentNumbers={this.getMostFrequentNumbers.bind(this)} />
+        <MostFrequentCombined calculateTimesDrawn={this.calculateTimesDrawn.bind(this)}
+                              getMostFrequentNumbers={this.getMostFrequentNumbers.bind(this)}
+                              getMostFrequentBonusNumber={this.getMostFrequentBonusNumber.bind(this)} />
       </div>
     );
   }
