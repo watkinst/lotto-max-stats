@@ -26,18 +26,18 @@ export default class SimIntro extends React.Component {
 
     if (glyphicon.hasClass('glyphicon-minus')) {
       glyphicon
-        .fadeOut(120, function() {
+        .fadeOut(120, () => {
           glyphicon.removeClass("glyphicon-minus");
         })
-        .fadeIn(120, function() {
-          glyphicon.addClass("glyphicon-plus")
+        .fadeIn(120, () => {
+          glyphicon.addClass("glyphicon-plus");
         });
     } else {
       glyphicon
-        .fadeOut(120, function() {
+        .fadeOut(120, () => {
           glyphicon.removeClass("glyphicon-plus");
         })
-        .fadeIn(120, function() {
+        .fadeIn(120, () => {
           glyphicon.addClass("glyphicon-minus");
         });
     }
