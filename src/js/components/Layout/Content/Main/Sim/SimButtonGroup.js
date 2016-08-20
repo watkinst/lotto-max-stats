@@ -57,7 +57,7 @@ export default class SimButtonGroup extends React.Component {
                      text="Stop"
                      action={this.props.stop} />
           <SimButton buttonState={this.getButtonState('random')}
-                     text="Random"
+                     text="Quick Pick"
                      action={this.props.random} />
           <SimButton buttonState={this.getButtonState('selections')}
                      text="Clear Picks"
