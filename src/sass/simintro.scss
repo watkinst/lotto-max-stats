@@ -4,4 +4,17 @@
   .title {
     font-size: 23px;
   }
+
+  .panel-group {
+    margin-bottom: 0;
+
+    .panel-primary>.panel-heading {
+      background-color: #2780e3;
+      border-color: #1967be;
+
+      .glyphicon {
+        float: right;
+      }
+    }
+  }
 }
