@@ -13,7 +13,8 @@ export default class TotalDollarPayout extends React.Component {
           <div className="row">
             <TotalDollarPayoutIntro />
             <TotalDollarPayoutStats
-              getTotalDollarPayouts={this.props.getTotalDollarPayouts} />
+              getTotalDollarPayouts={this.props.getTotalDollarPayouts}
+              getNumberWithCommas={this.props.getNumberWithCommas} />
           </div>
         </div>
       </div>

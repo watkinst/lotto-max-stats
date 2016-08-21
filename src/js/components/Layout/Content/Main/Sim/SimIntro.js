@@ -24,21 +24,21 @@ export default class SimIntro extends React.Component {
     var panel = $("#collapse1");
     var glyphicon = $(".glyphicon");
 
-    if (glyphicon.hasClass('glyphicon-minus')) {
+    if (glyphicon.hasClass('glyphicon-minus-sign')) {
       glyphicon
         .fadeOut(120, () => {
-          glyphicon.removeClass("glyphicon-minus");
+          glyphicon.removeClass("glyphicon-minus-sign");
         })
         .fadeIn(120, () => {
-          glyphicon.addClass("glyphicon-plus");
+          glyphicon.addClass("glyphicon-plus-sign");
         });
     } else {
       glyphicon
         .fadeOut(120, () => {
-          glyphicon.removeClass("glyphicon-plus");
+          glyphicon.removeClass("glyphicon-plus-sign");
         })
         .fadeIn(120, () => {
-          glyphicon.addClass("glyphicon-minus");
+          glyphicon.addClass("glyphicon-minus-sign");
         });
     }
   }
@@ -54,7 +54,7 @@ export default class SimIntro extends React.Component {
               <h4 className="panel-title">
                 Instructions
                 <a data-toggle="collapse" href="#collapse1">
-                  <span className="glyphicon glyphicon-minus"
+                  <span className="glyphicon glyphicon-minus-sign"
                         onClick={this.handleGlyphiconClick}
                         aria-hidden="true">
                   </span>

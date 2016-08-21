@@ -104,21 +104,27 @@ export default class PayoutStats extends React.Component {
     return grandTotalOfTotalDollarPayouts;
   }
 
+  getNumberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   render() {
     return (
       <div>
         <div className="col-xs-12">
           <div className="row">
             <AverageDollarPayout
-              getAverageDollarPayouts={this.getAverageDollarPayouts.bind(this)} />
-            <TotalDollarPayout
-              getTotalDollarPayouts={this.getTotalDollarPayouts.bind(this)} />
+              getAverageDollarPayouts={this.getAverageDollarPayouts.bind(this)}
+              getNumberWithCommas={this.getNumberWithCommas.bind(this)} />
+            <AveragePercentagePayout
+              getAveragePercentagePayouts={this.getAveragePercentagePayouts.bind(this)} />
           </div>
         </div>
         <div className="col-xs-12">
           <div className="row">
-            <AveragePercentagePayout
-              getAveragePercentagePayouts={this.getAveragePercentagePayouts.bind(this)} />
+            <TotalDollarPayout
+              getTotalDollarPayouts={this.getTotalDollarPayouts.bind(this)}
+              getNumberWithCommas={this.getNumberWithCommas.bind(this)} />
             <TotalPercentagePayout
               getTotalPercentagePayouts={this.getTotalPercentagePayouts.bind(this)} />
           </div>

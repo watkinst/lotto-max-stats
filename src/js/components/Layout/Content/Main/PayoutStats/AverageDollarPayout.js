@@ -13,7 +13,8 @@ export default class AverageDollarPayout extends React.Component {
           <div className="row">
             <AverageDollarPayoutIntro />
             <AverageDollarPayoutStats
-              getAverageDollarPayouts={this.props.getAverageDollarPayouts} />
+              getAverageDollarPayouts={this.props.getAverageDollarPayouts}
+              getNumberWithCommas={this.props.getNumberWithCommas} />
           </div>
         </div>
       </div>
