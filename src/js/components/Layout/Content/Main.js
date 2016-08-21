@@ -2,6 +2,7 @@ import React from 'react';
 import Sim from './Main/Sim';
 import LastWinning from './Main/LastWinning';
 import MostFrequent from './Main/MostFrequent';
+import PayoutStats from './Main/PayoutStats';
 
 export default class Main extends React.Component {
 
@@ -16,6 +17,9 @@ export default class Main extends React.Component {
               <MostFrequent data={this.props.data} />
             </div>
           </div>
+        </div>
+        <div className="row">
+          <PayoutStats data={this.props.data} />
         </div>
       </div>
     );
