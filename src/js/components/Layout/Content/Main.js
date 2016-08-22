@@ -3,6 +3,7 @@ import Sim from './Main/Sim';
 import LastWinning from './Main/LastWinning';
 import MostFrequent from './Main/MostFrequent';
 import PayoutStats from './Main/PayoutStats';
+import PrizeCountStats from './Main/PrizeCountStats';
 
 export default class Main extends React.Component {
 
@@ -20,6 +21,9 @@ export default class Main extends React.Component {
         </div>
         <div className="row">
           <PayoutStats data={this.props.data} />
+        </div>
+        <div className="row">
+          <PrizeCountStats data={this.props.data} />
         </div>
       </div>
     );
