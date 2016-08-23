@@ -12,7 +12,7 @@ export default class Content extends React.Component {
           <div className="content">
             <div className="row">
               <Main data={this.props.data} />
-              <Sidebar />
+              <Sidebar data={this.props.data} />
             </div>
           </div>
         </div>
