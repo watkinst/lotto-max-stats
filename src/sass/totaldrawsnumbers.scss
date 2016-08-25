@@ -6,5 +6,9 @@
     margin: 0 0 0.387852460923865% 0;
     padding: 12px 0;
     width: 100%;
+
+    &.disabled {
+      opacity: 1;
+    }
   }
 }

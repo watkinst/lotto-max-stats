@@ -21,13 +21,13 @@ export default class LastWinningNumbers extends React.Component {
 
     return (
       <div className="col-xs-12 last-winning-numbers">
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[0]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[1]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[2]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[3]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[4]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[5]}</button>
-        <button className="btn btn-default btn-last-winning disabled">{lastWinningNumbers[6]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[0]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[1]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[2]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[3]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[4]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[5]}</button>
+        <button className="btn btn-primary btn-last-winning disabled">{lastWinningNumbers[6]}</button>
         <button className="btn btn-success btn-last-winning disabled">{lastBonusNumber}</button>
       </div>
     );

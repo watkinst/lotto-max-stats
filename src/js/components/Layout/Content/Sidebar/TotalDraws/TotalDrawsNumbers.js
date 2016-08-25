@@ -10,7 +10,7 @@ export default class TotalDrawsNumbers extends React.Component {
 
     return (
       <div className="col-xs-12 total-draws-numbers">
-        <button className="btn btn-default btn-total-draws-numbers disabled">{numberOfDraws}</button>        
+        <button className="btn btn-primary btn-total-draws-numbers disabled">{numberOfDraws}</button>        
       </div>
     );
   }
