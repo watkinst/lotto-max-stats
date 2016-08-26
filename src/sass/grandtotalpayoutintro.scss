@@ -5,3 +5,11 @@
     font-size: 23px;
   }
 }
+
+@media (max-width: 320px) {
+  .grand-total-payout-intro {
+    .title {
+      font-size: 22px;
+    }
+  }
+}

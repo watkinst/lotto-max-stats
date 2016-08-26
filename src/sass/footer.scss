@@ -2,5 +2,19 @@
   background-color: #2780e3;
   border-color: #1967be;
   color: #ffffff;
-  min-height: 340px;
+  font-size: 16px;
+  padding: 5px 0 12px 0;
+  text-align: center;
+
+  .disclaimer {
+    font-size: 12px;
+
+    .link {
+      color: #ffffff;    
+    }
+
+    &:first-of-type {
+      padding-bottom: 5px;
+    }
+  } 
 }

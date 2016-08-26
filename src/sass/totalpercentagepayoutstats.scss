@@ -1,73 +1,56 @@
-.total-percentage-payout-container {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  padding: 0px 15px 5px;
+.total-percentage-payout-stats {
+  padding-bottom:  8px;
 
-  .total-percentage-payout-stats {
-    padding-bottom:  8px;
+  .btn {      
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 1%;
+    padding: .4em .6em .5em;
+    width: 100%;
 
-    .btn {      
-      display: inline-block;
-      font-size: 1.2em;
-      font-weight: normal;
-      margin-bottom: 1%;
-      padding: .4em .6em .5em;
-      width: 100%;
-
-      &.disabled {
-        opacity: 1;
-      }
+    &.disabled {
+      opacity: 1;
     }
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
-  .total-percentage-payout-container {
-    .total-percentage-payout-stats {
-      .label {
-        font-size: 1em;
-      }
+  .total-percentage-payout-stats {
+    .btn {
+      font-size: 1em;
     }
   }
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
-  .total-percentage-payout-container {
-    .total-percentage-payout-stats {
-      .label {
-        font-size: 0.9em;
-      }
+  .total-percentage-payout-stats {
+    .btn {
+      font-size: 0.9em;
     }
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1499px) {
-  .total-percentage-payout-container {
-    .total-percentage-payout-stats {
-      .label {
-        font-size: 0.8em;
-      }
+  .total-percentage-payout-stats {
+    .btn {
+      font-size: 0.8em;
     }
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-  .total-percentage-payout-container {
-    .total-percentage-payout-stats {
-      .label {
-        font-size: 0.7em;
-      }
+  .total-percentage-payout-stats {
+    .btn {
+      font-size: 0.7em;
     }
   }
 }
 
 @media (max-width: 370px) {
-  .total-percentage-payout-container {
-    .total-percentage-payout-stats {
-      .label {
-        font-size: .9em;
-      }
+  .total-percentage-payout-stats {
+    .btn {
+      font-size: .9em;
     }
   }
 }
