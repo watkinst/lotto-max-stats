@@ -11,7 +11,7 @@ export default class GrandTotalPrizesNumbers extends React.Component {
 
     return (
       <div className="col-xs-12 grand-total-prizes-numbers">
-        <button className="btn btn-default btn-grand-total-prizes-numbers disabled">{formattedGrandTotal}</button>        
+        <button className="btn btn-primary btn-grand-total-prizes-numbers disabled">{formattedGrandTotal}</button>        
       </div>
     );
   }

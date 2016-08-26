@@ -11,7 +11,7 @@ export default class GrandTotalPayoutNumbers extends React.Component {
 
     return (
       <div className="col-xs-12 grand-total-payout-numbers">
-        <button className="btn btn-default btn-grand-total-payout-numbers disabled">${formattedGrandTotal}</button>        
+        <button className="btn btn-primary btn-grand-total-payout-numbers disabled">${formattedGrandTotal}</button>        
       </div>
     );
   }

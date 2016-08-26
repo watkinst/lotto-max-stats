@@ -1,72 +1,56 @@
-.average-dollar-payout-container {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  padding: 0px 15px 5px;
+.average-dollar-payout-stats {
+  padding-bottom:  8px;
 
-  .average-dollar-payout-stats {
-    padding-bottom:  8px;
+  .btn {      
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 1%;
+    padding: .4em .6em .5em;
+    width: 100%;
 
-    .label {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      color: #999;
-      display: inline-block;
-      font-size: 1.2em;
-      font-weight: normal;
-      margin-bottom: 1%;
-      padding: .4em .6em .5em;
-      width: 100%;
+    &.disabled {
+      opacity: 1;
     }
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1800px) {
-  .average-dollar-payout-container {
-    .average-dollar-payout-stats {
-      .label {
-        font-size: 1em;
-      }
+  .average-dollar-payout-stats {
+    .btn {
+      font-size: 1em;
     }
   }
 }
 
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .average-dollar-payout-container {
-    .average-dollar-payout-stats {
-      .label {
-        font-size: 0.9em;
-      }
+@media (min-width: 1500px) and (max-width: 1599px) {  
+  .average-dollar-payout-stats {
+    .btn {
+      font-size: 0.9em;
     }
-  }
+  }  
 }
 
 @media (min-width: 1300px) and (max-width: 1499px) {
-  .average-dollar-payout-container {
-    .average-dollar-payout-stats {
-      .label {
-        font-size: 0.8em;
-      }
+  .average-dollar-payout-stats {
+    .btn {
+      font-size: 0.8em;
     }
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-  .average-dollar-payout-container {
-    .average-dollar-payout-stats {
-      .label {
-        font-size: 0.7em;
-      }
+  .average-dollar-payout-stats {
+    .btn {
+      font-size: 0.7em;
     }
   }
 }
 
-@media (max-width: 370px) {
-  .average-dollar-payout-container {
-    .average-dollar-payout-stats {
-      .label {
-        font-size: .9em;
-      }
+@media (max-width: 370px) {  
+  .average-dollar-payout-stats {
+    .btn {
+      font-size: .9em;
     }
-  }
+  } 
 }
