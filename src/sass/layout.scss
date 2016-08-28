@@ -1,4 +1,33 @@
+html,
+body {
+  height: 100%;
+}
 body {
   background: #efefef;
   padding-top: 66px;
+
+  #app {
+    height: 100%;
+
+    .wrapper {
+      min-height: 100%;
+      position: relative;
+
+      .main-content {
+        padding-bottom: 134px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    #app {
+      .wrapper {        
+        .main-content {
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
 }

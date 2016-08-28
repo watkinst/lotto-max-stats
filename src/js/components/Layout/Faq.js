@@ -1,12 +1,11 @@
 import React from 'react';
-import Main from './Content/Main';
-import Sidebar from './Content/Sidebar';
+import Accordion from './Faq/Accordion';
 import DataStore from '../../stores/DataStore';
 import Actions from '../../actions/Actions';
 
-require('../../../sass/content.scss');
+require('../../../sass/faq.scss');
 
-export default class Content extends React.Component {
+export default class Faq extends React.Component {
   constructor() {
     super();
     this.interval = null;
@@ -37,16 +36,13 @@ export default class Content extends React.Component {
 
   render() {
     const { data } = this.state;
-    
+
     if (data) {
       return (
         <div className="row">
-          <div className="col-xs-12">
-            <div className="content">
-              <div className="row">
-                <Main data={data} />
-                <Sidebar data={data} />
-              </div>
+          <div className="col-xs-12 col-md-6 col-md-push-3">
+            <div className="about">
+              <Accordion />
             </div>
           </div>
         </div>

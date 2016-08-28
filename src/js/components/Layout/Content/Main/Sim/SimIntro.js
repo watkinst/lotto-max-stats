@@ -24,21 +24,21 @@ export default class SimIntro extends React.Component {
     var panel = $("#collapse1");
     var glyphicon = $(".glyphicon");
 
-    if (glyphicon.hasClass('glyphicon-minus-sign')) {
-      glyphicon
-        .fadeOut(120, () => {
-          glyphicon.removeClass("glyphicon-minus-sign");
-        })
-        .fadeIn(120, () => {
-          glyphicon.addClass("glyphicon-plus-sign");
-        });
-    } else {
+    if (glyphicon.hasClass('glyphicon-plus-sign')) {
       glyphicon
         .fadeOut(120, () => {
           glyphicon.removeClass("glyphicon-plus-sign");
         })
         .fadeIn(120, () => {
           glyphicon.addClass("glyphicon-minus-sign");
+        });
+    } else {
+      glyphicon
+        .fadeOut(120, () => {
+          glyphicon.removeClass("glyphicon-minus-sign");
+        })
+        .fadeIn(120, () => {
+          glyphicon.addClass("glyphicon-plus-sign");
         });
     }
   }
@@ -47,21 +47,21 @@ export default class SimIntro extends React.Component {
     return (
       <div className="col-xs-12 sim-intro">
         <h2 className="title">Lotto Max Draw Simulator</h2>
-        <p className="tagline">A fun way to pick and test your Lotto Max numbers!</p>
+        <p className="tagline">The quick and easy way to pick your Lotto Max numbers!</p>
         <div className="panel-group">
           <div className="panel panel-primary">
             <div className="panel-heading">
               <h4 className="panel-title">
-                Instructions
+                How To Play
                 <a data-toggle="collapse" href="#collapse1">
-                  <span className="glyphicon glyphicon-minus-sign"
+                  <span className="glyphicon glyphicon-plus-sign"
                         onClick={this.handleGlyphiconClick}
                         aria-hidden="true">
                   </span>
                 </a>
               </h4>
             </div>
-            <div id="collapse1" className="panel-collapse collapse in">
+            <div id="collapse1" className="panel-collapse collapse">
               <div className="panel-body">{this.getIntroText()}</div>
             </div>
           </div>
