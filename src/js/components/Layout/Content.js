@@ -16,7 +16,7 @@ export default class Content extends React.Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(Actions.fetchJsonData.bind(this), 120000);
+    this.interval = setInterval(Actions.fetchJsonData.bind(this), 300000);
   }
 
   componentWillMount() {
