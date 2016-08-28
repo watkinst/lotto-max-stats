@@ -1,10 +1,15 @@
 .footer {
   background-color: #2780e3;
   border-color: #1967be;
+  bottom: 0;
   color: #ffffff;
   font-size: 16px;
+  height: 134px;
+  left: 0;
   padding: 25px 0 35px 0;
+  position: absolute;
   text-align: center;
+  width: 100%;
 
   .disclaimer {
     font-size: 12px;
@@ -17,4 +22,11 @@
       padding-bottom: 5px;
     }
   } 
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    height: 100%;
+    position: inherit;
+  }
 }

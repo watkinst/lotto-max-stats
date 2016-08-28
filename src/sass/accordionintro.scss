@@ -1,0 +1,15 @@
+.accordion-intro {
+  padding-bottom: 20px;
+
+  .title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 320px) {
+  .accordion-intro {
+    .title {
+      font-size: 22px;
+    }
+  }
+}

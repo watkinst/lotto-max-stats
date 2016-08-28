@@ -1,0 +1,13 @@
+.about {
+  margin-bottom: 15px;
+
+  .panel-group {
+    .panel+.panel {
+      margin-top: 30px;
+    }
+    .panel-primary > .panel-heading {
+      background-color: #2780e3;
+      border-color: #1967be;  
+    }
+  }
+}

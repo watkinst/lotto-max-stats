@@ -3,6 +3,7 @@ import TotalDraws from './Sidebar/TotalDraws';
 import GrandTotalPayout from './Sidebar/GrandTotalPayout';
 import GrandTotalPrizes from './Sidebar/GrandTotalPrizes';
 import AdsenseResponsiveSidebarTop from './Sidebar/AdsenseResponsiveSidebarTop';
+import AdsenseResponsiveSidebarBottom from './Sidebar/AdsenseResponsiveSidebarBottom';
 
 export default class Sidebar extends React.Component {
   render() {
@@ -15,6 +16,9 @@ export default class Sidebar extends React.Component {
           <GrandTotalPayout data={this.props.data} />
           <GrandTotalPrizes data={this.props.data} />
           <TotalDraws data={this.props.data} />
+        </div>
+        <div className="row">
+          <AdsenseResponsiveSidebarBottom />
         </div>
       </div>
     );

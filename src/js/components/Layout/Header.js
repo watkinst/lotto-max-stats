@@ -6,7 +6,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">        
           <header>            
-            <Navigation />
+            <Navigation location={ this.props } />
           </header>        
       </div>
     );
