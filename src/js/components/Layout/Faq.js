@@ -1,12 +1,12 @@
 import React from 'react';
 import Accordion from './Faq/Accordion';
-import DataStore from '../../stores/DataStore';
-import Actions from '../../actions/Actions';
+//import DataStore from '../../stores/DataStore';
+//import Actions from '../../actions/Actions';
 
 require('../../../sass/faq.scss');
 
 export default class Faq extends React.Component {
-  constructor() {
+  /*constructor() {
     super();
     this.interval = null;
     this.state = {
@@ -32,12 +32,12 @@ export default class Faq extends React.Component {
     this.setState({
       data: DataStore.getData()
     });
-  }
+  }*/
 
   render() {
-    const { data } = this.state;
+    //const { data } = this.state;
 
-    if (data) {
+    //if (data) {
       return (
         <div className="row">
           <div className="col-xs-12 col-md-6 col-md-push-3">
@@ -47,8 +47,8 @@ export default class Faq extends React.Component {
           </div>
         </div>
       );
-    } else {
+    /*} else {
       return <div></div>;
-    }
+    }*/
   }
 }
