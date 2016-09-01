@@ -35,7 +35,7 @@ class DataStore extends EventEmitter {
 
 	    case Constants.JSON_DATA_FETCH:
 
-        axios.get('../../data/data.json')
+        axios.get('./data/data.json')
           .then((response) => {
             var haveData = (this.data !== null) ? true : false;
             var dataStr = JSON.stringify(this.data);
