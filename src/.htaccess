@@ -1,10 +1,12 @@
+#Redirects all traffic to https
 RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+#Handles direct server requests for /faq page
+#because of react router behaviour
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
-
-RewriteCond %{HTTP_HOST} !^(.*)\.lottomaxstats\.com$ [NC]
-RewriteRule ^(.*)$ http://www.lottomaxstats.com/$1 [R=301,L]
