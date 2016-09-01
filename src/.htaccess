@@ -1,5 +1,10 @@
+RewriteEngine On
+
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
+
+RewriteCond %{HTTP_HOST} !^(.*)\.lottomaxstats\.com$ [NC]
+RewriteRule ^(.*)$ http://www.lottomaxstats.com/$1 [R=301,L]
