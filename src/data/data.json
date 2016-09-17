@@ -84080,6 +84080,423 @@
           }
         }
       }
+    },
+    {
+      "date": "September 16, 2016",
+      "timestamp": 1474079399000,
+      "lotto_max": {
+        "winning_numbers": [7,12,14,15,27,34,44],
+        "bonus_number": 6,
+        "match": {
+          "7_of_7": {
+            "number_of_prizes": 2,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "ON",
+                "location_locale": null,
+                "number_of_prizes": 2
+              }
+            ],
+            "prize_amount": 30000000.00
+          },
+          "6_of_7_plus_bonus": {
+            "number_of_prizes": 4,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "BC",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "QC",
+                "location_locale": null,
+                "number_of_prizes": 2
+              },
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": "Western Canada",
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 291167.10
+          },
+          "6_of_7": {
+            "number_of_prizes": 140,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 4704.10
+          },
+          "5_of_7": {
+            "number_of_prizes": 8171,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 102.30
+          },
+          "4_of_7": {
+            "number_of_prizes": 180619,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7_plus_bonus": {
+            "number_of_prizes": 168397,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7": {
+            "number_of_prizes": 1596055,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 5.00
+          }
+        }
+      },
+      "maxmillions": {
+        "winning_numbers": [          
+          {
+            "winning_number_set": [6,8,17,27,29,30,31],
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "ON",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [8,10,13,18,20,22,42],
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "QC",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [8,10,14,15,23,38,43],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [5,7,19,22,28,34,44],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [13,14,26,28,32,36,38],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [10,13,22,23,25,27,47],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [7,11,14,26,30,39,47],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [12,14,19,22,38,40,46],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [4,10,22,24,28,37,40],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [4,13,25,28,37,43,46],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [12,14,19,23,25,38,40],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [21,24,29,31,39,41,44],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [1,6,22,26,35,36,41],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [5,8,16,29,35,42,49],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [4,10,13,16,23,30,47],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [5,7,9,13,15,29,49],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [4,5,10,16,19,42,48],
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": "Western Canada",
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [3,7,23,25,27,37,43],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [1,2,4,18,28,33,37],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [6,8,10,24,27,32,40],
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "ON",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [4,8,16,19,22,23,46],
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [7,15,16,19,27,31,42],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          }
+        ]
+      },
+      "twist": {
+        "match": {
+          "7_of_7_shaded_numbers": {
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": "Oromocto",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 107000.00
+          },
+          "6_of_7_shaded_numbers": {
+            "number_of_prizes": 15,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Albert County",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Bridgewater",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Charlotte County",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Conception Bay South",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Dartmouth",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Halifax",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 2
+              },
+              {
+                "location_city": "Happy Valley-Goose Bay",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NB",
+                "location_locale": "Madawaska County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Mount Pearl",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Sussex",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NS",
+                "location_locale": "Victoria County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Yarmouth",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NB",
+                "location_locale": "York County",
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1070.00
+          },
+          "5_of_7_shaded_numbers": {
+            "number_of_prizes": 275,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107.00
+          },
+          "4_of_7_shaded_numbers": {
+            "number_of_prizes": 3341,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 17.00
+          },
+          "3_of_7_shaded_numbers": {
+            "number_of_prizes": 22963,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 3.00
+          }
+        }
+      },
+      "tag": {
+        "winning_number": 484965,
+        "match": {
+          "all_6_digits": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100000.00
+          },
+          "last_5_digits": {
+            "number_of_prizes": 4,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": "Halifax",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 2
+              },
+              {
+                "location_city": "Saint John's",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Woodstock",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000.00
+          },
+          "last_4_digits": {
+            "number_of_prizes": 40,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100.00
+          },
+          "last_3_digits": {
+            "number_of_prizes": 421,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "last_2_digits": {
+            "number_of_prizes": 4160,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 10.00
+          },
+          "last_digit": {
+            "number_of_prizes": 41575,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 2.00
+          }
+        }
+      }
     }
   ]
 }
