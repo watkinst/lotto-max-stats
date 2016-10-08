@@ -84922,6 +84922,205 @@
           }
         }
       }
+    },
+    {
+      "date": "October 7, 2016",
+      "timestamp": 1475893799000,
+      "lotto_max": {
+        "winning_numbers": [8,9,12,24,29,36,37],
+        "bonus_number": 17,
+        "match": {
+          "7_of_7": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location":null,
+            "prize_amount": 10000000.00
+          },
+          "6_of_7_plus_bonus": {
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "ON",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 288119.80
+          },
+          "6_of_7": {
+            "number_of_prizes": 65,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 4714.00
+          },
+          "5_of_7": {
+            "number_of_prizes": 3817,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 101.80
+          },
+          "4_of_7": {
+            "number_of_prizes": 84017,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7_plus_bonus": {
+            "number_of_prizes": 79224,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7": {
+            "number_of_prizes": 740488,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 5.00
+          }
+        }
+      },
+      "maxmillions": {
+        "winning_numbers": null
+      },
+      "twist": {
+        "match": {
+          "7_of_7_shaded_numbers": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107000.00
+          },
+          "6_of_7_shaded_numbers": {
+            "number_of_prizes": 9,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NB",
+                "location_locale": "Carleton County",
+                "number_of_prizes": 2
+              },
+              {
+                "location_city": "Corner Brook",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Glace Bay",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NS",
+                "location_locale": "Lunenburg County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Miramichi",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Saint John",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Saint John's",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Whitbourne",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1070.00
+          },
+          "5_of_7_shaded_numbers": {
+            "number_of_prizes": 192,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107.00
+          },
+          "4_of_7_shaded_numbers": {
+            "number_of_prizes": 2087,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 17.00
+          },
+          "3_of_7_shaded_numbers": {
+            "number_of_prizes": 13928,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 3.00
+          }
+        }
+      },
+      "tag": {
+        "winning_number": 353286,
+        "match": {
+          "all_6_digits": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100000.00
+          },
+          "last_5_digits": {
+            "number_of_prizes": 5,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Baie Verte",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Bay Roberts",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Gloucester County",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Moncton",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000.00
+          },
+          "last_4_digits": {
+            "number_of_prizes": 23,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100.00
+          },
+          "last_3_digits": {
+            "number_of_prizes": 255,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "last_2_digits": {
+            "number_of_prizes": 2655,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 10.00
+          },
+          "last_digit": {
+            "number_of_prizes": 26353,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 2.00
+          }
+        }
+      }
     }
   ]
 }
