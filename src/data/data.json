@@ -86006,9 +86006,9 @@
                 "number_of_prizes": 1
               },
               {
-                "location_city": "Pictou County",
+                "location_city": null,
                 "location_province": "NS",
-                "location_locale": null,
+                "location_locale": "Pictou County",
                 "number_of_prizes": 1
               }
             ],
@@ -86031,6 +86031,186 @@
           },
           "last_digit": {
             "number_of_prizes": 30080,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 2.00
+          }
+        }
+      }
+    },
+    {
+      "date": "November 18, 2016",
+      "timestamp": 1479526199000,
+      "lotto_max": {
+        "winning_numbers": [7,10,21,24,38,40,49],
+        "bonus_number": 3,
+        "match": {
+          "7_of_7": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 15000000.00
+          },
+          "6_of_7_plus_bonus": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 278924.40
+          },
+          "6_of_7": {
+            "number_of_prizes": 65,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 4563.60
+          },
+          "5_of_7": {
+            "number_of_prizes": 3606,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 104.40
+          },
+          "4_of_7": {
+            "number_of_prizes": 79316,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7_plus_bonus": {
+            "number_of_prizes": 76706,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7": {
+            "number_of_prizes": 703198,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 5.00
+          }
+        }
+      },
+      "maxmillions": {
+        "winning_numbers": null
+      },
+      "twist": {
+        "match": {
+          "7_of_7_shaded_numbers": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107000.00
+          },
+          "6_of_7_shaded_numbers": {
+            "number_of_prizes": 10,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 3
+              },
+              {
+                "location_city": null,
+                "location_province": "NB",
+                "location_locale": "Albert County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Bedford",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Berwick",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Moncton",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Oromocto",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Summerside",
+                "location_province": "PEI",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1070.00
+          },
+          "5_of_7_shaded_numbers": {
+            "number_of_prizes": 161,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107.00
+          },
+          "4_of_7_shaded_numbers": {
+            "number_of_prizes": 1930,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 17.00
+          },
+          "3_of_7_shaded_numbers": {
+            "number_of_prizes": 13261,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 3.00
+          }
+        }
+      },
+      "tag": {
+        "winning_number": 648557,
+        "match": {
+          "all_6_digits": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100000.00
+          },
+          "last_5_digits": {
+            "number_of_prizes": 3,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "PEI",
+                "location_locale": "Prince County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NS",
+                "location_locale": "Victoria County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NB",
+                "location_locale": "York County",
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000.00
+          },
+          "last_4_digits": {
+            "number_of_prizes": 24,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100.00
+          },
+          "last_3_digits": {
+            "number_of_prizes": 228,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "last_2_digits": {
+            "number_of_prizes": 2451,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 10.00
+          },
+          "last_digit": {
+            "number_of_prizes": 24713,
             "number_of_prizes_by_location": null,
             "prize_amount": 2.00
           }
