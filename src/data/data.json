@@ -86586,6 +86586,207 @@
           }
         }
       }
+    },
+    {
+      "date": "December 9, 2016",
+      "timestamp": 1481340599000,
+      "lotto_max": {
+        "winning_numbers": [11,17,24,26,34,35,39],
+        "bonus_number": 16,
+        "match": {
+          "7_of_7": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 50000000.00
+          },
+          "6_of_7_plus_bonus": {
+            "number_of_prizes": 2,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "BC",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "QC",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 201206.40
+          },
+          "6_of_7": {
+            "number_of_prizes": 76,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 4989.00
+          },
+          "5_of_7": {
+            "number_of_prizes": 5078,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 105.60
+          },
+          "4_of_7": {
+            "number_of_prizes": 113120,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7_plus_bonus": {
+            "number_of_prizes": 103995,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "3_of_7": {
+            "number_of_prizes": 1003318,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 5.00
+          }
+        }
+      },
+      "maxmillions": {
+        "winning_numbers": [          
+          {
+            "winning_number_set": [7,11,13,25,30,44,49],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          },
+          {
+            "winning_number_set": [10,16,18,34,39,41,45],
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 1000000.00
+          }
+        ]
+      },
+      "twist": {
+        "match": {
+          "7_of_7_shaded_numbers": {
+            "number_of_prizes": 0,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107000.00
+          },
+          "6_of_7_shaded_numbers": {
+            "number_of_prizes": 6,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Dieppe",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Elmsdale",
+                "location_province": "NS",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": "NS",
+                "location_locale": "Guysborough County",
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Mount Pearl",
+                "location_province": "NL",
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": "Shediac",
+                "location_province": "NB",
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1070.00
+          },
+          "5_of_7_shaded_numbers": {
+            "number_of_prizes": 222,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 107.00
+          },
+          "4_of_7_shaded_numbers": {
+            "number_of_prizes": 2363,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 17.00
+          },
+          "3_of_7_shaded_numbers": {
+            "number_of_prizes": 16057,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 3.00
+          }
+        }
+      },
+      "tag": {
+        "winning_number": 173604,
+        "match": {
+          "all_6_digits": {
+            "number_of_prizes": 1,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 100000.00
+          },
+          "last_5_digits": {
+            "number_of_prizes": 3,
+            "number_of_prizes_by_location": [
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": null,
+                "number_of_prizes": 1
+              },
+              {
+                "location_city": null,
+                "location_province": null,
+                "location_locale": null,
+                "number_of_prizes": 1
+              }
+            ],
+            "prize_amount": 1000.00
+          },
+          "last_4_digits": {
+            "number_of_prizes": 32,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 100.00
+          },
+          "last_3_digits": {
+            "number_of_prizes": 300,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 20.00
+          },
+          "last_2_digits": {
+            "number_of_prizes": 3031,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 10.00
+          },
+          "last_digit": {
+            "number_of_prizes": 29929,
+            "number_of_prizes_by_location": null,
+            "prize_amount": 2.00
+          }
+        }
+      }
     }
   ]
 }
