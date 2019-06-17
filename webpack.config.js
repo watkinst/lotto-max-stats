@@ -1,44 +1,53 @@
 var debug = process.env.NODE_ENV !== 'production';
 var webpack = require('webpack');
 var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  context: path.join(__dirname, 'src'),
-  devtool: debug ? 'source-map' : null,
+  // mode: "production", // "production" | "development" | "none"
   entry: './js/lms.js',
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015', 'stage-0'],
-          plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
-        }
-      },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          'style',
-          'css?sourceMap!sass?sourceMap'
-        )
-      }
-    ]
-  },
   output: {
     path: __dirname + '/src/',
     filename: 'lms.min.js'
   },
-  sassLoader: {
-    includePaths: ['src/sass']
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/react', '@babel/env'],
+          plugins: [
+            'react-html-attrs',
+            'transform-class-properties',
+            ['@babel/plugin-proposal-function-bind'],
+            [
+              "@babel/plugin-proposal-decorators",
+              {
+                "legacy": true
+              }
+            ]
+          ],
+        }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+            { loader: MiniCssExtractPlugin.loader, options: { hmr: debug } },
+            { loader: 'css-loader', options: { url: false, sourceMap: true } },
+            { loader: 'sass-loader', options: { includePaths: ['src/sass'], sourceMap: true } },
+        ]
+      }
+    ]
   },
+  devtool: debug ? 'source-map' : null,
+  context: path.join(__dirname, 'src'),
   plugins: debug
    ? [
-    new ExtractTextPlugin('lms.min.css', { allChunks: true })
+    new MiniCssExtractPlugin({ filename: "lms.min.css" })
    ] : [
-    new ExtractTextPlugin('lms.min.css', { allChunks: true }),
+    new MiniCssExtractPlugin({ filename: "lms.min.css" }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
