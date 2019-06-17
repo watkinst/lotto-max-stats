@@ -10,7 +10,7 @@ I wanted to prove to myself how infinitesimally small my chances of ever winning
 
 ## Usage
 1. Run `npm run dev`.
-1. View the running application in your browser at `localhost` ( it runs on port 80 ).
+1. View the running application in your browser at `localhost` ( it runs on port 8080 ).
 
 ## License
 MIT License
