@@ -274,7 +274,6 @@ class SimStore extends EventEmitter {
   random() {
     this.clearAll();
     this.data.myNumbers = this.getNumbers();
-    console.log(this.data.myNumbers);
     this.emitChange();
   }
 }

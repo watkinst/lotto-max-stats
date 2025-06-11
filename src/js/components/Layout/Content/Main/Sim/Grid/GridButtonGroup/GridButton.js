@@ -13,7 +13,6 @@ export default class GridButton extends React.Component {
     } else {
       this.props.select(clickedNumber);
     }
-    console.log(this.props.selections);
   }
 
   getButtonState(selected) {

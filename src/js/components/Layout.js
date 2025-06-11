@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
+import { withRouter } from 'react-router-dom';
 
 require('../../sass/layout.scss');
 
-export default class Layout extends React.Component {
+class Layout extends React.Component {
   render() {
     const { location } = this.props;    
     return (
@@ -18,3 +19,5 @@ export default class Layout extends React.Component {
     );    
   }
 }
+
+export default withRouter(Layout);

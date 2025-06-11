@@ -1,5 +1,5 @@
 import React from 'react';
-import { IndexLink, Link } from "react-router";
+import { NavLink } from "react-router-dom";
 
 require('../../../../sass/navigation.scss');
 
@@ -33,13 +33,13 @@ export default class Navigation extends React.Component {
           <div className="collapse navbar-collapse" id="navbar-collapse-1">
             <ul className="nav navbar-nav">
               <li className={ homeClass }>
-                <IndexLink to="/">
+                <NavLink exact to="/">
                   Home
                   <span className="sr-only">(current)</span>
-                </IndexLink>
+                </NavLink>
               </li>
               <li className={ faqClass }>
-                <Link to="faq">FAQ</Link>
+                <NavLink to="faq">FAQ</NavLink>
               </li>              
             </ul>            
           </div>

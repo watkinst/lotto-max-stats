@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from "react-router";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout";
 import Content from './components/Layout/Content';
 import Faq from './components/Layout/Faq';
@@ -8,10 +8,12 @@ import Faq from './components/Layout/Faq';
 const app = document.getElementById('app');
 
 ReactDOM.render(
-  <Router history={ browserHistory }>
-    <Route path="/" component={ Layout }>
-      <IndexRoute component={ Content }></IndexRoute>
-      <Route path="faq" name="faq" component={ Faq }></Route>
-    </Route>
-  </Router>,
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={ Content }></Route>
+        <Route path="/faq" name="faq" component={ Faq }></Route>
+      </Switch>
+    </Layout>
+  </BrowserRouter>,
 app);
