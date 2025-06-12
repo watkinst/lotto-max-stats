@@ -4,7 +4,7 @@ var path = require('path');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  // mode: "production", // "production" | "development" | "none"
+  mode: "development", // "production" | "development" | "none"
   entry: './js/lms.js',
   output: {
     path: __dirname + '/src/',
@@ -23,9 +23,23 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-            { loader: MiniCssExtractPlugin.loader, options: { hmr: debug } },
-            { loader: 'css-loader', options: { url: false, sourceMap: true } },
-            { loader: 'sass-loader', options: { includePaths: ['src/sass'], sourceMap: true } },
+            { loader: MiniCssExtractPlugin.loader },
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                sassOptions: {
+                  includePaths: ['src/sass']
+                }
+              }
+            },
         ]
       }
     ]
