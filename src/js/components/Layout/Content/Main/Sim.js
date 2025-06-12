@@ -17,7 +17,7 @@ export default class Sim extends React.Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     SimStore.addChangeListener(this.onChange.bind(this));
     Actions.fetchSimData();
   }

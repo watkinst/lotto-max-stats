@@ -5,9 +5,9 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header">        
-          <header>            
-            <Navigation location={ this.props } />
-          </header>        
+        <header>            
+          <Navigation />
+        </header>        
       </div>
     );
   }

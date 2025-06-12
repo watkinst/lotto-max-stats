@@ -16,12 +16,9 @@ export default class Content extends React.Component {
   }
 
   componentDidMount() {
+    DataStore.addChangeListener(this.onChange.bind(this));    
     Actions.fetchJsonData();
     this.interval = setInterval(Actions.fetchJsonData.bind(this), 300000);
-  }
-
-  componentWillMount() {
-    DataStore.addChangeListener(this.onChange.bind(this));    
   }
 
   componentWillUnmount() {

@@ -42,6 +42,9 @@ module.exports = {
     ]
   },
   devtool: debug ? 'source-map' : null,
+  devServer: {
+    historyApiFallback: true,
+  },
   context: path.join(__dirname, 'src'),
   plugins: debug
    ? [
