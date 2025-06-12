@@ -6,7 +6,7 @@ require('../../sass/layout.scss');
 
 const Layout = ({ children }) => {    
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Header />
       <div className="container-fluid main-content">
         { children }

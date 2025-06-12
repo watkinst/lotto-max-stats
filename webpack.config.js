@@ -18,17 +18,6 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: ['@babel/react', '@babel/env'],
-          plugins: [
-            'react-html-attrs',
-            'transform-class-properties',
-            ['@babel/plugin-proposal-function-bind'],
-            [
-              "@babel/plugin-proposal-decorators",
-              {
-                "legacy": true
-              }
-            ]
-          ],
         }
       },
       {

@@ -8,14 +8,14 @@ export default class AccordionPanel extends React.Component {
     var answer = this.props.answer;
       
     return (
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h4 class="panel-title">
+      <div className="panel panel-primary">
+        <div className="panel-heading">
+          <h4 className="panel-title">
             <a data-toggle="collapse" data-parent="#accordion" href={"#collapse" + name}>{question}</a>
           </h4>
         </div>
-        <div id={"collapse" + name} class="panel-collapse collapse">
-          <div class="panel-body">
+        <div id={"collapse" + name} className="panel-collapse collapse">
+          <div className="panel-body">
             {answer}
           </div>
         </div>

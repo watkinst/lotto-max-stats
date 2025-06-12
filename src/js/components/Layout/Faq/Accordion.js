@@ -44,9 +44,9 @@ export default class Accordion extends React.Component {
     var panels = this.populatePanels();
 
     return (
-      <div class="accordion-container">
+      <div className="accordion-container">
         <AccordionIntro />
-        <div class="panel-group" id="accordion">
+        <div className="panel-group" id="accordion">
           {panels.map(
             function(panel, index) {
               return (
